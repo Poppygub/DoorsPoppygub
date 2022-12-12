@@ -3,9 +3,7 @@ local Window = Library.CreateLib("Poppygub GUB HUB", "Synapse")
 local Tab = Window:NewTab("Poppygub")
 local Section = Tab:NewSection("HI Poppygub")
 Section:NewButton("discord", "?", function()
-
     https://discord.gg/D53UpENM
-
 end)
 local Tab = Window:NewTab("Poppygub1")
 local PoppySection = Tab:NewSection("HI Poppygub")
