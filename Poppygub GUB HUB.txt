@@ -9,6 +9,3 @@ Section:NewToggle("run fast", "?", function(state)
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 18
     end
 end)
-Section:NewButton("Crucifix "?", function()
-    game.Players.LocalPlayer.Character:FindFirstChild("Crucifix").Handle:Clone()
-end)
