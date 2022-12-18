@@ -3,6 +3,9 @@ local Window = Library.CreateLib("Poppygub GUI HUB", "Synapse")
 local Tab = Window:NewTab("main")
 local Section = Tab:NewSection("Hello, "..game.Players.LocalPlayer.Name)
 local Section = Tab:NewSection("education system")
+Section:NewButton("discord", "?", function()
+    setclipboard(https://discord.gg/D53UpENM)
+end)
 Section:NewToggle("run fast", "?", function(state)
     if state then
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
