@@ -6,12 +6,8 @@ local Section = Tab:NewSection("education system")
 Section:NewButton("discord", "?", function()
     setclipboard(https://discord.gg/D53UpENM)
 end)
-Section:NewToggle("run fast", "?", function(state)
-    if state then
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
-    else
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 18
-    end
+Section:NewTextBox("run fast", "?", function(run fast)
+ game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
 Section:NewButton("keyboard", "?", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
