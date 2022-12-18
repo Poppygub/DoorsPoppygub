@@ -3,3 +3,6 @@ local Window = Library.CreateLib("Poppygub GUI HUB", "Synapse")
 local Tab = Window:NewTab("main")
 local Section = Tab:NewSection("Hello, "..game.Players.LocalPlayer.Name)
 local Section = Tab:NewSection("education system")
+Section:NewTextBox("run fast", "?", function(run fast)
+ game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
