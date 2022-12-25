@@ -16,13 +16,6 @@ Section:NewToggle("Run", "?", function(state)
     end
 end)
 Section:NewDropdown("DropdownText", "DropdownInf", {"Option 1", "Option 2", "Option 3"}, functio
-Section:NewDropdown("DropdownText", "DropdownInf", {"Option 1", "Option 2", "Option 3"}, function(currentOption)
-
-    print(currentOption)
-
-end)
-Section:NewDropdown("DropdownText", "DropdownInf", {"Option 1", "Option 2", "Option 3"}, function(currentOption)
-
-    print(currentOption)
-
+Section:NewDropdown("Kill "..game.Players.LocalPlayer.Name, "?", {"Option 1", "Option 2", "Option 3"}, function(currentOption)
+    print("Kill "..game.Players.LocalPlayer.Name)
 end)
