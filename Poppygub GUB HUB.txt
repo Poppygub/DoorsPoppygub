@@ -15,13 +15,14 @@ Section:NewToggle("Run", "?", function(state)
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 18
     end
 end)
-    getgenv().Toggled = state
-end)
+Section:NewDropdown("DropdownText", "DropdownInf", {"Option 1", "Option 2", "Option 3"}, functio
+Section:NewDropdown("DropdownText", "DropdownInf", {"Option 1", "Option 2", "Option 3"}, function(currentOption)
 
-game:GetService("RunService").RenderStepped:Connect(function()
-	if getgenv().Toggled then
-		toggle:UpdateToggle("Toggle On")
-	else
-		toggle:UpdateToggle("Toggle Off")
-	end
-end
+    print(currentOption)
+
+end)
+Section:NewDropdown("DropdownText", "DropdownInf", {"Option 1", "Option 2", "Option 3"}, function(currentOption)
+
+    print(currentOption)
+
+end)
