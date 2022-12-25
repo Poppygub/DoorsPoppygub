@@ -15,9 +15,6 @@ Section:NewToggle("Run", "?", function(state)
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 18
     end
 end)
-getgenv().Toggled = false
-
-local toggle = Section:NewToggle("Toggle", "Info", (state)
     getgenv().Toggled = state
 end)
 
@@ -27,4 +24,4 @@ game:GetService("RunService").RenderStepped:Connect(function()
 	else
 		toggle:UpdateToggle("Toggle Off")
 	end
-end)
+end
